@@ -1,5 +1,7 @@
 # Burnout Recovery Dashboard
 
+https://adavidoaiei.github.io/burnout-app/
+
 A simple, modern web dashboard to help you manage and recover from burnout. Built with HTML, CSS, JavaScript, and Bootstrap 5.
 
 ## Features
