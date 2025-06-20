@@ -1,4 +1,4 @@
-# Burnout Recovery Dashboard
+# Pomodoro Dashboard
 
 [Live Demo](https://adavidoaiei.github.io/burnout-app/)
 
@@ -9,7 +9,7 @@ A simple, modern web dashboard to help you manage and recover from burnout. Buil
 - **Pomodoro Timer**: 25-minute focus timer with start/reset buttons.
 - **Daily Checklist**: Track daily self-care and productivity habits.
 - **Motivational Quote**: Get a new motivational quote each day (or on demand).
-- **Lo-fi Chill Music**: Embedded SoundCloud player for relaxing background music.
+- **Lo-fi Chill Music**: Embedded SoundCloud and multiple relaxing SoundCloud tracks for background music.
 - **Responsive Design**: Clean, mobile-friendly layout using Bootstrap 5.
 
 ## Usage
@@ -18,7 +18,7 @@ A simple, modern web dashboard to help you manage and recover from burnout. Buil
 2. Use the Pomodoro timer to focus on tasks.
 3. Check off daily activities as you complete them.
 4. Click "Alt citat" for a new motivational quote.
-5. Enjoy the Lo-fi music while you work or relax.
+5. Enjoy the Lo-fi music and relaxing melodies while you work or relax.
 
 ## Deploying to GitHub Pages
 
@@ -32,7 +32,7 @@ A simple, modern web dashboard to help you manage and recover from burnout. Buil
 
 - **Quotes**: Edit the `quotes` array in the `<script>` section of `index.html` to add your own motivational messages.
 - **Checklist**: Change the checklist items in the HTML to fit your daily routine.
-- **Music**: Replace the SoundCloud embed link with your favorite track or playlist.
+- **Music**: Replace or add SoundCloud/YouTube embed links with your favorite tracks or playlists.
 
 ## Requirements
 
@@ -43,6 +43,7 @@ A simple, modern web dashboard to help you manage and recover from burnout. Buil
 
 - [Bootstrap 5](https://getbootstrap.com/)
 - [SoundCloud](https://soundcloud.com/) for music embed
+- [YouTube](https://youtube.com/) for playlist options
 
 ---
 
