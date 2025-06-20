@@ -1,6 +1,6 @@
 # Pomodoro Dashboard
 
-[Live Demo](https://adavidoaiei.github.io/burnout-app/)
+[Live Demo](https://adavidoaiei.github.io/https://github.com/adavidoaiei/pomodoro-application/)
 
 A simple, modern web dashboard to help you manage and recover from burnout. Built with HTML, CSS, JavaScript, and Bootstrap 5.
 
@@ -14,7 +14,7 @@ A simple, modern web dashboard to help you manage and recover from burnout. Buil
 
 ## Usage
 
-1. Open [`index.html`](index.html) in your web browser, or visit the [Live Demo](https://adavidoaiei.github.io/burnout-app/).
+1. Open [`index.html`](index.html) in your web browser, or visit the [Live Demo](https://adavidoaiei.github.io/pomodoro-application/).
 2. Use the Pomodoro timer to focus on tasks.
 3. Check off daily activities as you complete them.
 4. Click "Alt citat" for a new motivational quote.
