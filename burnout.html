@@ -4,24 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Burnout Recovery Dashboard</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #f4f7fa;
       color: #333;
       margin: 0;
-      padding: 2rem;
+      padding: 2rem 0;
     }
-    .container {
+    .container-custom {
       max-width: 800px;
       margin: auto;
       background: #fff;
       padding: 2rem;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
     }
     .section {
       margin-bottom: 2rem;
@@ -31,6 +30,7 @@
       border: 1px solid #ddd;
       border-radius: 10px;
       background: #fefefe;
+      margin-bottom: 1.5rem;
     }
     ul {
       list-style: none;
@@ -42,40 +42,54 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Burnout Recovery Dashboard</h1>
+  <div class="container container-custom mt-4">
+    <h1 class="text-center mb-4">Burnout Recovery Dashboard</h1>
 
     <div class="section timer">
-      <h2>Pomodoro Timer</h2>
-      <p id="timer">25:00</p>
-      <button onclick="startTimer()">Start</button>
-      <button onclick="resetTimer()">Reset</button>
+      <h2 class="h4 mb-3">Pomodoro Timer</h2>
+      <p id="timer" class="display-5 text-center mb-3">25:00</p>
+      <div class="d-flex justify-content-center gap-2">
+        <button class="btn btn-success" onclick="startTimer()">Start</button>
+        <button class="btn btn-secondary" onclick="resetTimer()">Reset</button>
+      </div>
     </div>
 
     <div class="section checklist">
-      <h2>Daily Checklist</h2>
-      <ul>
-        <li><input type="checkbox" /> 10 minute de respirație</li>
-        <li><input type="checkbox" /> 30 minute de cod fără întreruperi</li>
-        <li><input type="checkbox" /> Pauză de mers pe jos</li>
-        <li><input type="checkbox" /> Activitate relaxantă</li>
+      <h2 class="h4 mb-3">Daily Checklist</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox" /> 10 minute de respirație
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox" /> 30 minute de cod fără întreruperi
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox" /> Pauză de mers pe jos
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox" /> Activitate relaxantă
+        </li>
       </ul>
     </div>
 
     <div class="section quote">
-      <h2>Motivația Zilei</h2>
-      <p id="quote"></p>
-      <button onclick="newQuote()">Alt citat</button>
+      <h2 class="h4 mb-3">Motivația Zilei</h2>
+      <p id="quote" class="fst-italic"></p>
+      <button class="btn btn-primary mt-2" onclick="newQuote()">Alt citat</button>
     </div>
 
     <div class="section music">
-      <h2>Lo-fi Chill</h2>
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/744481732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-      </iframe>
+      <h2 class="h4 mb-3">Lo-fi Chill</h2>
+      <div class="ratio ratio-16x9">
+        <iframe scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/744481732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+        </iframe>
+      </div>
     </div>
   </div>
 
+  <!-- Bootstrap JS Bundle CDN (for interactive components if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     let time = 1500;
     let interval;
