@@ -1,6 +1,6 @@
 # Burnout Recovery Dashboard
 
-https://adavidoaiei.github.io/burnout-app/
+[Live Demo](https://adavidoaiei.github.io/burnout-app/)
 
 A simple, modern web dashboard to help you manage and recover from burnout. Built with HTML, CSS, JavaScript, and Bootstrap 5.
 
@@ -14,22 +14,30 @@ A simple, modern web dashboard to help you manage and recover from burnout. Buil
 
 ## Usage
 
-1. Open `burnout.html` in your web browser.
+1. Open [`index.html`](index.html) in your web browser, or visit the [Live Demo](https://adavidoaiei.github.io/burnout-app/).
 2. Use the Pomodoro timer to focus on tasks.
 3. Check off daily activities as you complete them.
 4. Click "Alt citat" for a new motivational quote.
 5. Enjoy the Lo-fi music while you work or relax.
 
+## Deploying to GitHub Pages
+
+1. Push your code to a GitHub repository (e.g., `burnout-app`).
+2. Make sure your main file is named `index.html`.
+3. Go to your repository on GitHub → **Settings** → **Pages**.
+4. Under "Source", select the branch (usually `main`) and the `/ (root)` folder, then save.
+5. Your site will be live at `https://<your-username>.github.io/<repo-name>/`.
+
 ## Customization
 
-- **Quotes**: Edit the `quotes` array in the `<script>` section of `burnout.html` to add your own motivational messages.
+- **Quotes**: Edit the `quotes` array in the `<script>` section of `index.html` to add your own motivational messages.
 - **Checklist**: Change the checklist items in the HTML to fit your daily routine.
 - **Music**: Replace the SoundCloud embed link with your favorite track or playlist.
 
 ## Requirements
 
 - Modern web browser (Chrome, Firefox, Edge, Safari, etc.)
-- No installation or server required—just open the HTML file.
+- No installation or server required—just open the HTML file or use GitHub Pages.
 
 ## Credits
 
