@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burnout Recovery Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .timer, .checklist, .quote, .music {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fefefe;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Burnout Recovery Dashboard</h1>
+
+    <div class="section timer">
+      <h2>Pomodoro Timer</h2>
+      <p id="timer">25:00</p>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="section checklist">
+      <h2>Daily Checklist</h2>
+      <ul>
+        <li><input type="checkbox" /> 10 minute de respirație</li>
+        <li><input type="checkbox" /> 30 minute de cod fără întreruperi</li>
+        <li><input type="checkbox" /> Pauză de mers pe jos</li>
+        <li><input type="checkbox" /> Activitate relaxantă</li>
+      </ul>
+    </div>
+
+    <div class="section quote">
+      <h2>Motivația Zilei</h2>
+      <p id="quote"></p>
+      <button onclick="newQuote()">Alt citat</button>
+    </div>
+
+    <div class="section music">
+      <h2>Lo-fi Chill</h2>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/744481732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    let time = 1500;
+    let interval;
+
+    function startTimer() {
+      clearInterval(interval);
+      interval = setInterval(() => {
+        if (time <= 0) {
+          clearInterval(interval);
+          alert("Pomodoro complet! Ia o pauză.");
+          return;
+        }
+        time--;
+        const minutes = String(Math.floor(time / 60)).padStart(2, '0');
+        const seconds = String(time % 60).padStart(2, '0');
+        document.getElementById('timer').textContent = `${minutes}:${seconds}`;
+      }, 1000);
+    }
+
+    function resetTimer() {
+      clearInterval(interval);
+      time = 1500;
+      document.getElementById('timer').textContent = '25:00';
+    }
+
+    const quotes = [
+      "Un pas mic azi e mai bun decât zero pași mâine.",
+      "Odihna nu e lene, e strategie.",
+      "Fii blând cu tine. Ești om, nu robot.",
+      "Ai voie să te oprești, să respiri, să reiei.",
+      "Cea mai bună versiune a ta începe cu liniște."
+    ];
+
+    function newQuote() {
+      const index = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').textContent = quotes[index];
+    }
+
+    newQuote();
+  </script>
+</body>
+</html>
+
