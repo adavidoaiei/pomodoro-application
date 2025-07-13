@@ -1,6 +1,6 @@
 # Pomodoro Dashboard
 
-[Live Demo](https://adavidoaiei.github.io/pomodoro-application/)
+https://adavidoaiei.github.io/pomodoro-application/
 
 A simple, modern web dashboard to help you manage and recover from burnout. Built with HTML, CSS, JavaScript, and Bootstrap 5.
 
